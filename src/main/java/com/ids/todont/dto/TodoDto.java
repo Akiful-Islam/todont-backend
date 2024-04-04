@@ -10,10 +10,13 @@ public record TodoDto(
     Long id,
     @NotEmpty(message = "Title is required")
     String title,
+    @NotEmpty(message = "Description is required")
     String description,
     @NotEmpty(message = "Due date is required")
     Date dueDate,
     @NotNull(message = "Priority is required")
-    Priority priority
+    Priority priority,
+    @NotNull(message = "Completed is required")
+    boolean completed
 ) {
 }

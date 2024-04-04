@@ -21,6 +21,8 @@ public class Todo {
     @NonNull
     @NotEmpty(message = "Title is required")
     private String title;
+    @NonNull
+    @NotEmpty
     private String description;
     @NonNull
     @NotEmpty(message = "Due date is required")
@@ -29,7 +31,7 @@ public class Todo {
     @NotNull
     @Enumerated(EnumType.STRING)
     private Priority priority;
-    @NotNull
+    @NonNull
     @NotEmpty
     private boolean completed;
 }
