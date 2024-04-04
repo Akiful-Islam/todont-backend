@@ -10,5 +10,4 @@ import java.awt.print.Pageable;
 
 @Repository
 public interface TodoRepository extends JpaRepository<Todo, Long>{
-    Page<Todo> findByCompletedOrPriorityOrTitleOrDescription(Boolean completed, Priority priority, String title, String description, Pageable pageable);
 }
