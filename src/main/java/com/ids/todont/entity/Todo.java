@@ -25,13 +25,11 @@ public class Todo {
     @NotEmpty
     private String description;
     @NonNull
-    @NotEmpty(message = "Due date is required")
     private Date dueDate;
     @NonNull
     @NotNull
     @Enumerated(EnumType.STRING)
     private Priority priority;
     @NonNull
-    @NotEmpty
     private boolean completed;
 }
